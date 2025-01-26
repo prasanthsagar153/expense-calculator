@@ -25,8 +25,8 @@ src/
 │   ├── ExpenseForm.tsx       # Form for adding new expenses
 │   ├── DisplayExpense.tsx    # Displays list of expenses
 │   └── Expense.tsx           # Main expense component
-├── App.tsx                # Main app component
-├── main.tsx              # Application entry point
+├── App.tsx                   # Main app component
+├── main.tsx                  # Application entry point
 
 ```
 
