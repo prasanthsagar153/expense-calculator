@@ -1,50 +1,47 @@
-# React + TypeScript + Vite
+# Expense Calculator  
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+An Expense Calculator application built using **React**, **TypeScript**, **Bootstrap**, **react-hook-form**, and **zod**. This app allows users to categorize their expenses and track them efficiently. The goal is to get the basic understanding of **React + Typescript**
 
-Currently, two official plugins are available:
+## Features  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **Add Expenses**: Add expense entries with categories, amounts, and descriptions.  
+- **Categorization**: Group expenses by custom categories.  
+- **Validation**: Robust form validation using `react-hook-form` and `zod`.  
+- **Responsive Design**: Styled with Bootstrap for a seamless experience on all devices.
 
-## Expanding the ESLint configuration
+## Technologies Used
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+- React: Component-based UI framework.
+- TypeScript: Strongly typed language for JavaScript.
+- Bootstrap: CSS framework for responsive design.
+- react-hook-form: Library for managing form state and validation.
+- zod: Schema-based validation for form inputs.
 
-- Configure the top-level `parserOptions` property like this:
+## Project Structure
 
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+```plaintext
+src/
+├── components/
+│   ├── ExpenseForm.tsx       # Form for adding new expenses
+│   ├── DisplayExpense.tsx    # Displays list of expenses
+│   └── Expense.tsx           # Main expense component
+├── App.tsx                # Main app component
+├── main.tsx              # Application entry point
+
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## Installation  
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
-```
+Follow these steps to set up the application on your local machine:  
+
+### Prerequisites  
+
+- Node.js (>=16.0.0)  
+- npm or yarn  
+
+### Clone the Repository  
+
+```bash  
+git clone https://github.com/prasanthsagar153/expense-calculator.git  
+cd expense-calculator  
